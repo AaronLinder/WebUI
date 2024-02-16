@@ -1,0 +1,4 @@
+<h1>Countdown Timer</h1>
+<input type="number" [(ngModel)]="countdownValue" placeholder="Enter time in seconds">
+<button (click)="startCountdown()">Start Countdown</button>
+<div id="timer">{{ displayTime }}</div>
