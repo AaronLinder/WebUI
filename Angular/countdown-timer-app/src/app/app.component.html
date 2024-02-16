@@ -1,1 +1,6 @@
-<app-countdown-timer></app-countdown-timer>
+<div class="container">
+    <h1 class="title">Countdown Timer</h1>
+    <input class="input-field" type="number" [value]="countdownSeconds" (input)="updateCountdownSeconds($event)" placeholder="Enter time in seconds">
+    <button class="start-button" (click)="startCountdown()">Start Countdown</button>
+    <div class="timer">{{ displayTime }}</div>
+  </div>
